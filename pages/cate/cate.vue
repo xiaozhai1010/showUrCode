@@ -28,7 +28,9 @@
 			})
 		},
 		methods: {
-			
+			async testFunction(){
+				console.log('你好么')
+			}
 		}
 	}
 </script>

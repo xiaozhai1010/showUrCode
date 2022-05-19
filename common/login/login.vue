@@ -177,5 +177,5 @@
 </script>
  
 <style lang="scss" >
-@import url('@/conmon/login/login.scss');
+@import url('@/common/login/login.scss');
 </style>

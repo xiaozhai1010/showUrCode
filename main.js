@@ -2,10 +2,13 @@
 // #ifndef VUE3
 import Vue from 'vue'
 import App from './App'
+//未登录拦截器
+// import interceptor from '@/utils/interceptor.js'
 
 import config from  '@/utils/config.js'
 import request from '@/utils/request.js'
 // import api from '@/utils/api.js'
+
 
 Vue.prototype.$request = request;
 Vue.prototype.$BaseUrl = config;

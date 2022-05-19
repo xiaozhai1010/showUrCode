@@ -55,7 +55,7 @@
 			},
 			async itemClick(){
 				uni.navigateTo({
-					url:"/pages/detail/detail"
+					url:"/common/login/login"
 				})
 			}
 		}

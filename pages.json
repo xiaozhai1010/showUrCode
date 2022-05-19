@@ -1,27 +1,40 @@
 {
-	"pages": [{
-		"path": "pages/home/home",
-		"style": {
-			"navigationBarTitleText": "首页",
-			"enablePullDownRefresh": true,
-			"h5": {
-				"pullToRefresh": {
-					"support": true,
-					"color": "#ff3333",
-					"style": "default",
-					"contentdown": {
-						"caption": "下拉可刷新自定义脚本"
-					},
-					"contentover": {
-						"caption": "释放可刷新自定义文本"
-					},
-					"contentrefresh": {
-						"caption": "正在刷新自定义文本"
+	"pages": [
+		//登录
+		{
+            "path" : "conmon/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        },
+		// home
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true,
+				"h5": {
+					"pullToRefresh": {
+						"support": true,
+						"color": "#ff3333",
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可刷新自定义脚本"
+						},
+						"contentover": {
+							"caption": "释放可刷新自定义文本"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新自定义文本"
+						}
 					}
 				}
 			}
-		}
-	}    ,{
+		},
+		// cart
+		{
             "path" : "pages/cart/cart",
             "style" :                                                                                    
             {
@@ -29,8 +42,9 @@
                 "enablePullDownRefresh": true
             }
             
-        }
-        ,{
+        },
+		//分类
+        {
             "path" : "pages/cate/cate",
             "style" :                                                                                    
             {
@@ -38,8 +52,9 @@
                 "enablePullDownRefresh": false
             }
             
-        }
-        ,{
+        },
+		//个人
+        {
             "path" : "pages/my/my",
             "style" :                                                                                    
             {
@@ -48,6 +63,7 @@
             }
             
         },
+		//详情
 		{
 			"path": "pages/detail/detail"
 		}

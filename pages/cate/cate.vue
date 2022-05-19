@@ -29,7 +29,7 @@
 		},
 		methods: {
 			async testFunction(){
-				console.log('你好么')
+				console.log('你好么 ')
 			}
 		}
 	}

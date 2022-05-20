@@ -1,19 +1,19 @@
-// //页面白名单
-// const whiteList = [
-// 	'/pages/home/home',
-// 	'/pages/cate/cate',
-// 	]
-// 	function hasPermission(url){
-// 		//请求路径在白名单中直接跳转，或者带有token直接跳转，
-// 		for (let i = 0; i < whiteList.length; i++) {
-// 			let token = uni.getStorageSync('token')
-// 			console.log(token)
-// 			if(url.indexOf(whiteList[i]) != -1 || token){
-// 				return true
-// 			}
-// 		}
-// 		return false 
-// 	}
+//页面白名单
+const whiteList = [
+	'/pages/home/home',
+	'/pages/cate/cate',
+	]
+	function hasPermission(url){
+		//请求路径在白名单中直接跳转，或者带有token直接跳转，
+		for (let i = 0; i < whiteList.length; i++) {
+			let token = uni.getStorageSync('token')
+			console.log(token,'2222')
+			if(url.indexOf(whiteList[i]) !== -1 || token){
+				return true
+			}
+		}
+		return false 
+	}
 
 
 // uni.addInterceptor('navigateTo',{
@@ -24,7 +24,7 @@
 // 			uni.navigateTo({
 // 				url:'/common/login/login'
 // 			})
-// 			return false
+// 			// return false
 // 		}
 // 		return true
 // 	},success(e) {

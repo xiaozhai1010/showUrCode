@@ -19,6 +19,7 @@
 	/* #ifndef APP-NVUE */
 	@import '@/static/customicons.css';
 	// 设置整个项目的背景色
+	@import url('@/static/iconfont/iconfont.css');
 	page {
 		background-color: #f5f5f5;
 	}

@@ -54,8 +54,8 @@
 				})
 			},
 			async itemClick(){
-				uni.navigateTo({
-					url:"/common/login/login"
+				uni.reLaunch({
+					url:'/common/login/login'
 				})
 			}
 		}

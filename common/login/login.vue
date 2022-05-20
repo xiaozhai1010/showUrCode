@@ -102,8 +102,7 @@
 					success: (res) => {
 						if (res.data.code == 200) {
 							//存储token
-							that.token = res.data.token;
-							uni.setStorageSync('token', that.token); // 将登录信息以token的方式存在硬盘中
+							uni.setStorageSync('token', JSON.stringify(res.data.data.token)); // 将登录信息以token的方式存在硬盘中
 							uni.setStorageSync('userInfo', JSON.stringify(res.data)); // 将用户信息存储在硬盘中
 							uni.switchTab({ // 跳转到新闻页面
 								url: "/pages/home/home",

@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 //未登录拦截器
-// import interceptor from '@/utils/interceptor.js'
+import interceptor from '@/utils/interceptor.js'
 
 import config from  '@/utils/config.js'
 import request from '@/utils/request.js'

@@ -6,7 +6,21 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: pink;
 }
 .row-2{
+	background-color: green;
 	margin-left: 20rpx;
+}
+.row-1-active{
+	background: red;
+}
+.row-2-active{
+	background: black;
+}
+.btn{
+	margin-top: 20rpx;
+}
+.menu{
+	font-size: 220rpx;
 }

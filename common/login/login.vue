@@ -39,7 +39,15 @@
 				showTimer: true, //是否显示验证码时间
 			}
 		},
- 
+		onLoad(option) {
+			// eventChannel 接收参数
+			//   const eventChannel = this.getOpenerEventChannel();
+			// eventChannel.on('acceptDataFromOpenerPage',(res)=>{
+			// 	console.log(res)
+			// })
+			let data = JSON.parse(decodeURIComponent(option.obj))
+			console.log(data)
+		},
 		methods: {
 			// 显示隐藏密码
 			changePassword: function() {

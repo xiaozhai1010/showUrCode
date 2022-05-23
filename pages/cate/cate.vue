@@ -29,13 +29,16 @@
 				
 			}
 		},
-		onLoad(){
-			uni.onTabBarMidButtonTap(()=>{
-				uni.navigateTo({
-					url:"/pages/cart/cart"
-				})
-			})
-			
+		onLoad(option){
+			// uni.onTabBarMidButtonTap(()=>{
+			// 	uni.navigateTo({
+			// 		url:"/pages/cart/cart"
+			// 	})
+			// })
+			console.log(option)
+		},
+		onPullDownRefresh(){
+			console.log('refresh the page')
 		},
 		methods: {
 			async testFunction(){

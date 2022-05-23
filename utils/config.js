@@ -3,6 +3,7 @@ const { system ,} = uni.getSystemInfoSync()
 
 // 服务器环境
 let baseUrl = ['http://xxx', 'https://unidemo.dcloud.net.cn/api']
+// let baseUrl = ['http://xxx', 'http://jsonplaceholder.typicode.com/posts']
 
 //小程序参数
 uni.config = {

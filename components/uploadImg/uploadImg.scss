@@ -1,0 +1,29 @@
+.uploadClass{
+	border:dashed  5rpx grey;
+	border-radius: 10;
+	border-color: #9E9E9E;
+	width: 250rpx;
+	height: 250rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.iconPic{
+	font-size: 60rpx;
+	color: grey;
+	display: flex;
+}
+.icon{
+}
+.imgCount{
+	font-size: 25rpx;
+	color: #9e9e9e;
+	margin-top: 30rpx;
+}
+.iconDel{
+	position: absolute;
+	cursor: pointer;
+	top: 10rpx;
+	left:220rpx;
+	float: right;
+}

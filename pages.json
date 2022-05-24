@@ -1,4 +1,4 @@
-{//739728715
+{//
 	"pages": [
 		// home
 		{
@@ -67,6 +67,15 @@
 		        "enablePullDownRefresh": false
 		    }
 		}
+        ,{
+            "path" : "components/uploadImg/uploadImg",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

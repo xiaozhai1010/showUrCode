@@ -76,6 +76,15 @@
             }
             
         }
+        ,{
+            "path" : "components/testDemo/testDemo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

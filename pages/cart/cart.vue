@@ -16,7 +16,7 @@
 		<view class="">
 			wechat页面显示
 			<navigator style="color:blue;cursor: pointer;" url="/pages/home/home" open-type="switchTab" >点击跳转主页</navigator>
-			<demo v-model="num"></demo>
+			<demo :value.sync="num"></demo>
 		</view>
 		<!-- #endif -->
 	</view>
@@ -32,9 +32,19 @@
 		},
 		data() {
 			return {
-				// num:1,
+				num:1,
 				arr:',',
 				imgArr:[]
+			}
+		},
+		created() {
+			setTimeout(()=>{
+				this.num=105
+			},500)
+		},
+		watch:{
+			num(val){
+				console.log('当前返回值',val)
 			}
 		},
 		methods: {

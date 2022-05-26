@@ -7,7 +7,7 @@
 
 <script>
 	export default {
-		props:['num'],
+		props:['value'],
 		data() {
 			return {
 				curNum:0,
@@ -15,12 +15,12 @@
 		},
 		methods: {
 			countAdd(){
-				
-				this.$emit('addClick',this.curNum++)
+				this.curNum++
+				this.$emit('update:value',this.curNum)
 			}
 		},
 		watch:{
-			curNum:{
+			value:{
 				handler(val){
 					this.curNum = val
 				}

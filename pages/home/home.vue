@@ -75,7 +75,7 @@
 			async getData() {
 			    api.getList().then((res)=>{
 					this.news = res
-					console.log(this.news)
+					console.log(this.news,'数据')
 				})
 				//post 测试
 				// api.change({id:2}).then((res)=>{
